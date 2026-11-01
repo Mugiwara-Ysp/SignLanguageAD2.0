@@ -1,0 +1,11 @@
+# Pinned for reproducible deployments. Python 3.10 to 3.12 (MediaPipe wheels).
+# PyTorch is installed from its official CPU wheel index to avoid CUDA dependencies.
+--extra-index-url https://download.pytorch.org/whl/cpu
+fastapi==0.115.6
+uvicorn==0.32.1
+pydantic==2.10.3
+numpy==1.26.4
+pillow==11.0.0
+scikit-learn==1.5.2
+mediapipe==0.10.21
+torch==2.6.0+cpu

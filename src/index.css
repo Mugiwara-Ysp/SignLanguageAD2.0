@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-navy-950 text-slate-100 antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+
+  body {
+    background-image: radial-gradient(circle at 15% -10%, rgba(30, 136, 255, 0.18), transparent 40%),
+      radial-gradient(circle at 90% 0%, rgba(30, 136, 255, 0.1), transparent 35%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
